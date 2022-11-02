@@ -66,8 +66,8 @@ header {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
-}
+  height: auto;}
+  
 a {
   text-decoration: none;
 }
@@ -312,30 +312,34 @@ a {
   width: calc((100% - 60px) / 3);
 }
 .doing__title {
-  text-align: center;
+text-align: center;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+color:var(--secondary-title-color)
 }
 
-.doing__title{
- background-color: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 70px;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  
+.doing-list__title{
+width: 100%;
+height: 70px;
+background-color: rgba(47, 48, 58, 0.8);
+position: absolute;
+bottom: -17%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .doing-list__caption{
-  font-weight: 700;
+ font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-background-color);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .doing-list__title{
@@ -346,10 +350,14 @@ a {
   letter-spacing: 0.03em;
 }
 
+
+
+
 /* section 4 */
 
-.members-cards-list {
+.cards-list {
   display: flex;
+  gap: 30px;
 }
 
 .members {
@@ -357,7 +365,7 @@ a {
   padding-bottom: 94px;
   background-color: var(--secondary-background-color);
 }
-.members-title {
+.members__title {
   margin-bottom: 50px;
   text-align: center;
 
@@ -365,34 +373,31 @@ a {
   font-size: 36px;
 }
 
-.card-info {
+.cards-list__info {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.members .name {
+.cards-list__name {
   text-align: center;
   margin-bottom: 10px;
-
   color: var(--secondary-title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.members .card {
-  width: calc((100%-90px / 4));
-  background-color: var(--fifth-background-color);
+.cards-list__position{
+width: calc((100%-90px) / 4);
+background-color: var(--fifth-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-.members-cards-list {
-  display: flex;
-  gap: 30px;
+ /* width: 270px; */
 }
 
-.card .content {
+
+.cards-list__content{
   text-align: center;
   font-size: 16px;
   line-height: 1.2;
@@ -405,7 +410,7 @@ a {
   justify-content: center;
   gap: 10px;
 }
-.soc-link {
+.soc-list__link{
   width: 44px;
   height: 44px;
   display: flex;
@@ -414,17 +419,17 @@ a {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-icon {
+.soc-list__icon {
   fill: var(--icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-link:hover,
-.soc-link:focus {
+.soc-list__link:hover,
+.soc-list__link:focus {
   background-color: var(--accent-color);
 }
-.soc-link:hover .soc-icon,
-.soc-link:focus .soc-icon {
+.soc-list__link:hover .soc-list__icon,
+.soc-list__link:focus .soc-list__icon {
   fill: var(--secondary-color);
 }
 
