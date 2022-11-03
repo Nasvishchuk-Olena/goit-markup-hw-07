@@ -14,7 +14,7 @@
 .hero__title {
     margin-bottom: 30px;
 
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -31,9 +31,9 @@
     border-radius: 4px;
     padding: 10px 32px;
 
-    color: var(--secondary-color);
+    color: $secondary-color;
 
-    background-color: var(--button-hero-colour);
+    background-color:$button-hero-colour;
     border: none;
     font-family: inherit;
     font-weight: 700;
@@ -46,5 +46,5 @@
 
 .hero__button:hover,
 .hero__button:focus {
-    background-color: var(--button-hero-active);
+    background-color:$button-hero-active;
 }
