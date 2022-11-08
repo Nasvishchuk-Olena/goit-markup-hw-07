@@ -40,10 +40,8 @@
 }
 
 .site-nav__link--current {
-    position: relative;
-    top: 41%;
-
-    color: $accent-color;
+    position: relative;    
+ color: $accent-color;
 }
 
 .site-nav__link--current::after {
